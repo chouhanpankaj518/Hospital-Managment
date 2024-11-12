@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.report{
+    box-shadow: 0px 0px 3px black;
+    overflow: hidden;
+    margin: 30px auto;
+    border-radius: 5px;
+    width: 700px;
+    height: 100%;
+}
+.report2{
+    box-shadow: 0px 0px 3px black;
+    overflow: hidden;
+    margin: 30px auto;
+    border-radius: 5px;
+    width: 700px;
+    height: 800px;
+    margin-top: 10px;
+    background-color: ghostwhite;
+}
+.logocard{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: rgb(139, 216, 191);
+}
+.logocard img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.contentcard{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contentcard div p{
+    margin-top:15px;
+}
+.contentsecond{
+    margin-left: 95px;
+    margin-top: 50px;
+
+}
+.contentsecond p{
+    margin-top: 15px;
+}
+.footer
+{
+    width: 700px;
+    height: 150px;
+    margin-top: 165px;
+    display: flex;
+    align-items: center;
+    justify-self: space-around;
+    font-size: smaller;
+    background-color: rgba(132, 185, 168, 0.858);
+}
+.footer h4{
+    margin-left: 75px;
+}
+.footer div{
+    margin-left: 75px;
+
+}
+
+@media screen and (max-width:568px){
+    .report{
+        width: 400px;
+    }
+    .logocard{
+        margin-left: -300px;
+        flex-direction: column;
+    }
+    .logocard h1{
+          font-size:xx-large;
+    }
+    .contentsecond{
+        margin-left: 100px;
+    }
+    .footer{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .footer div{
+        margin-left: -300px;
+    }
+    .footer h4{
+        margin-left: -470px;
+    }
+}
