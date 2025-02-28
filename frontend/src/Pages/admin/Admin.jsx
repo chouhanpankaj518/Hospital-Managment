@@ -40,8 +40,8 @@ export default function Admin() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+    setValue(newValue)
+  }
 
   return (
     <Box sx={{ width: '100%' }}>
@@ -65,4 +65,4 @@ export default function Admin() {
       </CustomTabPanel>
     </Box>
   );
-}
+};

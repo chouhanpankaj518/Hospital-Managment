@@ -97,22 +97,65 @@ const styles = `
    margin-top:5px;
   }  
 
-  @media screen and (max-width: 768px) {
-    .content {
-      flex-direction: column;
-    }
+  // @media screen and (max-width: 768px) {
+  //   .content {
+  //     flex-direction: column;
+  //   }
     
-  .hospital-image {
-   margin-left:0rem;
-   width:"300px;
-  }
+  // .hospital-image {
+  //  margin-left:0rem;
+  //  width:"300px;
+  // }
+
+  //   .section {
+  //     margin: 0 0 30px;
+  //   }
+  //     h1{
+  //     margin-left:3rem;
+  //     }
+  // }
+  
+  
+    @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 24px;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .hospital-image {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
 
     .section {
-      margin: 0 0 30px;
+      flex: 1 1 100%;
+      margin: 0 0 20px;
     }
-      h1{
-      margin-left:3rem;
-      }
+
+    .cta-button {
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form label,
+    form input,
+    .Appointmentsubmit {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .Appointmentsubmit {
+      margin-left: 0;
+    }
   }
 `;
 

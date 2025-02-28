@@ -70,28 +70,60 @@
 
 }
 
-@media screen and (max-width:568px){
-    .report{
-        width: 400px;
+
+@media screen and (max-width:768px){
+    .report,
+    .report2 {
+        width: 90%;
     }
-    .logocard{
-        margin-left: -300px;
+    .logocard {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logocard img {
+        width: 80px;
+        height: 80px;
+    }
+    .contentcard {
         flex-direction: column;
     }
-    .logocard h1{
-          font-size:xx-large;
+    .contentsecond {
+        margin-left: 20px;
     }
-    .contentsecond{
-        margin-left: 100px;
-    }
-    .footer{
+    .footer {
         flex-direction: column;
-        row-gap: 20px;
+        text-align: center;
     }
-    .footer div{
-        margin-left: -300px;
+    .footer h4,
+    .footer div {
+        margin-left: 0;
     }
-    .footer h4{
-        margin-left: -470px;
+}
+
+@media screen and (max-width:480px){
+    .report,
+    .report2 {
+        width: 100%;
+    }
+    .logocard {
+        flex-direction: column;
+    }
+    .logocard h1 {
+        font-size: large;
+    }
+    .contentcard {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .contentsecond {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .footer {
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: center;
+        padding: 1rem;
     }
 }

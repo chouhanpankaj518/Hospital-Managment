@@ -9,6 +9,8 @@ import Admin from './Pages/admin/Admin';
 import Report from './Pages/Report';
 import './App.css'; 
 import Appointment from './Pages/Appointment';
+import Login from './login/Login';
+import { RiAdminFill } from "react-icons/ri";
 
 export default function App() {
   return (
@@ -22,7 +24,8 @@ export default function App() {
             <Link to="/Patients">Patients</Link>
             <Link to="/Appointment">Appointment</Link>
             <Link to="/Report">Report</Link>
-            <Link to="/Admin">Admin</Link>
+            {/* <Link to="/Admin">Admin</Link> */}
+            <Link to="/login"><RiAdminFill/></Link>
           </nav>
         </header>
         <Routes>
@@ -32,6 +35,7 @@ export default function App() {
           <Route path="/Appointment" element={<Appointment/>}/>
           <Route path="/Report" element={<Report/>} />
           <Route path="/Admin" element={<Admin />} />
+          <Route path='/login' element={<Login/>}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -3,6 +3,7 @@ import cors from 'cors'
 import bodyParser from 'body-parser'
 import "dotenv/config"
 import mongoose from 'mongoose'
+import authroutes from './route/admin.js'
 
 import doctorsroute from './route/doctors.js'
 import patientsroute from './route/patients.js'
@@ -20,6 +21,7 @@ app.use("/doctor",doctorsroute)
 app.use("/patient",patientsroute)
 app.use("/report",reportroutes)
 app.use("/Appointment",Appointrouter)
+app.use("/admin",authroutes)
 
 
 app.get("/api/data",(req,res)=>{

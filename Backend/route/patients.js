@@ -6,7 +6,7 @@ const patientsroute = Router();
 patientsroute.get("/getpatients", async (req, res) => {
   try {
     // Populate the 'doctorname' field to get the doctor's name
-    let showdata = await patients.find().populate('doctorname', 'name');n
+    let showdata = await patients.find().populate('doctorname', 'name');
     res.json(showdata);
   }
    catch (e) {
